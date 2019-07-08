@@ -33,6 +33,7 @@ At Normal state:
 Project_Name: FreeRTOS_Tiva 
 
 files includes:
+
 1- FreeRTOS_Files folder; include free RTOS implimentaion.
 
 2- GPIO folder include; "GPIO.h, GPIO.c"
@@ -40,3 +41,25 @@ files includes:
 3- CAN folder include; "CAN.h, CAN.c"
 
 4- Main folder include; main.c
+
+Note :
+
+This code for one node and you have to change message id depend on node as below:
+
+Node 1 ; 
+
+send maibox; 2 , message id = 2;
+
+recive maibox; 1 , message id = 1;
+
+Node 2 ; 
+
+send maibox; 3 , message id = 3;
+
+recive maibox; 2 , message id = 2;
+
+Node 3 ; 
+
+send maibox; 1 , message id = 1;
+
+recive maibox; 3 , message id = 3;
